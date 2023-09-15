@@ -11,6 +11,7 @@ const IMAGES = {
   circleBlue: require('../assets/img/circleBlue.png'),
   particle: require('../assets/img/particle.png'),
   newsImg1: require('../assets/img/newsImg1.png'),
+  emptyNotifImg: require('../assets/img/emptyNotifImg.jpg'),
 }
 
 export default IMAGES
