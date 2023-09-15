@@ -7,7 +7,7 @@ const Stack = createNativeStackNavigator()
 
 const BiayaStack = () => {
   return(
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShadowVisible: false }}>
       <Stack.Screen name="Biaya" component={Biaya} />
     </Stack.Navigator>
   )

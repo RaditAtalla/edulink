@@ -5,8 +5,8 @@ const Stack = createNativeStackNavigator()
 
 const NotifikasiStack = () => {
   return(
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Notifkasi" component={Notifikasi} />
+    <Stack.Navigator screenOptions={{ headerShadowVisible: false }}>
+      <Stack.Screen name="Notifkasi" component={Notifikasi} options={{ title: 'Notice' }} />
     </Stack.Navigator>
   )
 }
