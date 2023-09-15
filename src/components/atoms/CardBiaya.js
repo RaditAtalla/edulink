@@ -1,17 +1,14 @@
 import { View, Text, StyleSheet } from 'react-native'
 import { COLORS, horizontalScale, moderateScale, verticalScale } from '../../constant'
-import {useState} from 'react'
 
 const CardBiaya = ({title, biaya, isPaid}) => {
-  status = isPaid ? 'Belum Bayar' : 'Lunas'
+  status = isPaid ? 'Lunas' : 'Belum bayar'
   return(
     <View style={Styles.container}>
       <Text style={Styles.title}>{title}</Text>
       <Text style={Styles.subtitle}>Jumlah SPP</Text>
       <Text style={Styles.biaya}>{biaya}</Text>
-      <View style={Styles.statusContainer}>
-        <Text styles={[Styles.status, {backgroundColor: isPaid ? COLORS.green : COLORS.red}]}>{status}</Text>
-      </View>
+      <Text style={[Styles.status, {backgroundColor: isPaid ? COLORS.green : COLORS.red}]}>{status}</Text>
     </View>
   )
 }
@@ -39,17 +36,15 @@ const Styles = StyleSheet.create({
     fontSize: moderateScale(16),
     fontFamily: 'Satoshi-Medium',
   },
-  statusContainer: {
+  status: {
+    textAlign: 'center',
     width: '100%',
     paddingVertical: verticalScale(12),
-    alignItems: 'center'
-  }, 
-  status: {
-    // textAlign: 'center',
     fontSize: moderateScale(16),
     fontFamily: 'Satoshi-Medium',
     color: COLORS.white,
-  }
+    borderRadius: 6,
+  },
 })
 
 export default CardBiaya

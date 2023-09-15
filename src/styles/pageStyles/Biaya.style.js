@@ -29,6 +29,7 @@ const Styles = StyleSheet.create({
     paddingVertical: verticalScale(32),
     paddingLeft: horizontalScale(15),
     paddingRight: horizontalScale(33),
+    gap: verticalScale(24),
   }
 })
 

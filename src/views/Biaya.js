@@ -17,7 +17,8 @@ const Biaya = () => {
           </View>
         </View>
         <View style={Styles.contentContainer}>
-          <CardBiaya title='SPP Semester 2 T.A 2023' biaya='Rp 135.000' isPaid={true} />
+          <CardBiaya title='SPP Semester 2 T.A 2023' biaya='Rp 135.000' isPaid={false} />
+          <CardBiaya title='SPP Semester 1 T.A 2023' biaya='Rp 135.000' isPaid={true} />
         </View>
       </ScrollView>
     </SafeAreaView>
