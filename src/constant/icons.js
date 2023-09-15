@@ -28,6 +28,7 @@ const ICONS = {
   clockOrange: require('../assets/icons/clockOrange.png'),
   briefCase: require('../assets/icons/briefCase.png'),
   clockFill: require('../assets/icons/clockFill.png'),
+  closeButton: require('../assets/icons/closeButton.png'),
 }
 
 export default ICONS
